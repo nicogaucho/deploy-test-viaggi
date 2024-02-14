@@ -65,7 +65,7 @@ body {
   height: 8%;
   bottom: -10%;
   left: 0;
-  background-color: var(--acc-color);  
+  background-color: var(--main-color);  
 }
 
 .nav-hover:hover::before {
@@ -92,4 +92,29 @@ body {
   box-shadow: none !important;
 }
 
+.desc {
+  position: relative;
+}
+
+.desc::after {
+  position: absolute;
+  content: '';
+  height: 6%;
+  width: 20%;
+  background-color: var(--main-color);
+  bottom: -10%;
+  left: 0;
+}
+
+.sticky-positioned {
+  position: sticky;
+  top: 100px;
+}
+
+.bg-image {
+  background-image: url('./mountain.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
